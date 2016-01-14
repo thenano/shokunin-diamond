@@ -1,6 +1,6 @@
 'use strict';
 
-if (!/[a-zA-Z]/.test(process.argv[2]))
+if (!process.argv[2] || !/[a-zA-Z]/.test(process.argv[2]))
   return console.log('INVALID INPUT');
 
 const from = 'A'.charCodeAt(0);
